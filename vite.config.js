@@ -7,7 +7,7 @@ import path from 'path'
 export default defineConfig({
   base: 
   process.env.NODE_ENV === 'production'
-    ? '/student-verify/' // Replace with your repository name
+    ? './' // Use relative path for GitHub Pages
     : '/',
   build: {
     rollupOptions: {
