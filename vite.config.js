@@ -5,7 +5,10 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  base: 
+  process.env.NODE_ENV === 'production'
+    ? '/student-verify/' // Replace with your repository name
+    : '/',
   build: {
     rollupOptions: {
       input: {
